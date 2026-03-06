@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnifying Glass Pro — Cloud Motion Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cream: #FAF6F0;
+            --gold: #C5A55A;
+            --gold-light: #D4BC7C;
+            --dark: #2C2C2C;
+            --muted: #8A8478;
+            --card-bg: #FFFFFF;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--cream);
+            color: var(--dark);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px 24px 40px;
+        }
+
+        .container {
+            max-width: 480px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .icon-circle {
+            width: 96px;
+            height: 96px;
+            border-radius: 24px;
+            background: linear-gradient(135deg, var(--gold-light), var(--gold));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 28px;
+            box-shadow: 0 4px 20px rgba(197, 165, 90, 0.3);
+        }
+
+        .icon-circle svg {
+            width: 48px;
+            height: 48px;
+            fill: #FFFFFF;
+        }
+
+        h1 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 28px;
+            font-weight: 400;
+            color: var(--dark);
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            color: var(--muted);
+            margin-bottom: 40px;
+        }
+
+        .links-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+
+        .links-card a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 24px;
+            text-decoration: none;
+            color: var(--dark);
+            font-size: 16px;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .links-card a:hover {
+            background: var(--cream);
+        }
+
+        .links-card a + a {
+            border-top: 1px solid #F0ECE4;
+        }
+
+        .links-card a .arrow {
+            color: var(--gold);
+            font-size: 18px;
+        }
+
+        .support-section {
+            margin-top: 40px;
+            padding: 24px;
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+
+        .support-section h2 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 8px;
+        }
+
+        .support-section p {
+            font-size: 14px;
+            color: var(--muted);
+            margin-bottom: 16px;
+            line-height: 1.5;
+        }
+
+        .support-section a.email-link {
+            display: inline-block;
+            padding: 12px 28px;
+            background: var(--gold);
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .support-section a.email-link:hover {
+            background: var(--gold-light);
+        }
+
+        .footer {
+            margin-top: 48px;
+            font-size: 13px;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon-circle">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+        </div>
+
+        <h1>Magnifying Glass Pro</h1>
+        <p class="subtitle">by Cloud Motion Lab LLC</p>
+
+        <div class="links-card">
+            <a href="privacy.html">
+                Privacy Policy <span class="arrow">›</span>
+            </a>
+            <a href="terms.html">
+                Terms of Use <span class="arrow">›</span>
+            </a>
+        </div>
+
+        <div class="support-section">
+            <h2>Need Help?</h2>
+            <p>If you have any questions, issues, or feedback about Magnifying Glass Pro, we'd love to hear from you.</p>
+            <a href="mailto:dev@slyapp.co" class="email-link">dev@slyapp.co</a>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 Cloud Motion Lab LLC. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
